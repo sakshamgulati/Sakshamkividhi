@@ -949,7 +949,10 @@ figure {
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
 }
-
+.shift-down {
+  position: relative;
+  top: 50px;
+}
 .js .animate-box {
   opacity: 0;
 }

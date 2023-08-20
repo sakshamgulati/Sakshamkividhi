@@ -923,9 +923,10 @@ function init() {
 	// Basic options for a simple Google Map
 	// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 	// var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-	var myLatlng = new google.maps.LatLng(11.997682, 121.915627);
+	var myLatlng = new google.maps.LatLng(32.70481563741177,74.87608190626504);
 	// 39.399872
 	// -8.224454
+
 
 	var mapOptions = {
 		// How zoomed in you want the map to start at (always required)
@@ -948,7 +949,7 @@ function init() {
 	// Create the Google Map using out element and options defined above
 	var map = new google.maps.Map(mapElement, mapOptions);
 
-	var addresses = ['Jammu'];
+	var addresses = ['Zone by the park, Jammu'];
 
 	for (var x = 0; x < addresses.length; x++) {
 		$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + addresses[x] + '&sensor=false', null, function (data) {
